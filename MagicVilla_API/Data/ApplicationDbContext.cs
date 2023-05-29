@@ -16,28 +16,28 @@ namespace MagicVilla_API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Villa>().HasData(
-                new Villa()
-                {
-                    Id = 1,
-                    Name = "Villa Real",
-                    Details = "",
-                    Occupants = 5,
-                    ImageUrl = "",
-                    MetersSquared = 50,
-                    Fee = 200,
-                    Amenity = "",
-                    DateCreate = DateTime.Now,
-                    UpdateDate = DateTime.Now,
+                 new Villa()
+                 {
+                     Id = 1,
+                     Name = "Villa Real",
+                     Details = "",
+                     Occupants = 5,
+                     ImageUrl = "",
+                     MetersSquared = 50,
+                     Fee = 200,
+                     Amenity = "",
+                     DateCreate = DateTime.Now,
+                     UpdateDate = DateTime.Now,
 
 
-                }, 
+                 },
                 new Villa()
                 {
                     Id = 2,
                     Name = "Premium Vista a la Piscina",
                     Details = "",
                     Occupants = 4,
-                    ImageUrl= "",
+                    ImageUrl = "",
                     MetersSquared = 50,
                     Fee = 150,
                     Amenity = "",
@@ -47,5 +47,6 @@ namespace MagicVilla_API.Data
 
                 });
         }
+
     }
 }
